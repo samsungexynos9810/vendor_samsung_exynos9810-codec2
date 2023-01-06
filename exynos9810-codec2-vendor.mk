@@ -14,6 +14,10 @@ PRODUCT_PACKAGES += \
 
 # libcodec2
 PRODUCT_PACKAGES += \
+    libcodec2_hidl_plugin.exynos9810 \
+    libcodec2_simple_component.exynos9810 \
+    libcodec2_soft_common.exynos9810 \
+    libcodec2_vndk.exynos9810 \
     libcodec2_hidl@1.0.exynos9810 \
     libcodec2_hidl@1.1.exynos9810 \
     libcodec2_hidl@1.2.exynos9810
