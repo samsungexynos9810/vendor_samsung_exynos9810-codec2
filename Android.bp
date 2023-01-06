@@ -72,6 +72,66 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libcodec2_hidl@1.0.exynos9810",
+	stem: "libcodec2_hidl@1.0",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libcodec2_hidl@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcodec2_hidl@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcodec2_hidl@1.1.exynos9810",
+	stem: "libcodec2_hidl@1.1",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libcodec2_hidl@1.1.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcodec2_hidl@1.1.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libcodec2_hidl@1.2.exynos9810",
+	stem: "libcodec2_hidl@1.2",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcodec2_hidl@1.2.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libSecC2ComponentStore",
 	owner: "samsung",
 	strip: {

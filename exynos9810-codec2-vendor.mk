@@ -12,6 +12,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libSecC2ComponentStore
 
+# libcodec2
+PRODUCT_PACKAGES += \
+    libcodec2_hidl@1.0.exynos9810 \
+    libcodec2_hidl@1.1.exynos9810 \
+    libcodec2_hidl@1.2.exynos9810
+
 # Sec Codec2
 PRODUCT_PACKAGES += \
     libcodec2_sec_aacdec \
